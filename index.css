@@ -10,6 +10,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     color: #ffffff;
+    margin: 50px;
 }
 .card-item{
     background: linear-gradient(0deg, #162525, #1d1d1d);
@@ -60,4 +61,10 @@ p, label{
     color: #6fca8e;
     margin-left: 15px;
 
+}
+
+.precio-sd{
+    font-size: 12px;
+    color: #a0a0a0;
+    text-decoration: line-through;
 }
