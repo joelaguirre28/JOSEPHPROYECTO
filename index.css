@@ -12,13 +12,13 @@
     color: #ffffff;
     margin: 50px;
 }
+
 .card-item{
     background: linear-gradient(0deg, #162525, #1d1d1d);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     padding-bottom: 30px;
-    
 }
 .cabecera{
     background: #46979f;
@@ -26,23 +26,22 @@
     margin-bottom: 75px;
 }
 img{
-    height: 150px;
+    height: 100%;
     width: 150px;
     object-fit: contain;
-    padding: 10px;
+    padding: 10px;   
 }
 .cont-img{
     height: 150px;
     width: 150px;
     border-radius: 1000px;
-    object-fit: auto;
     position: absolute;
     right: calc(50% - 75px);
     top: calc(50% - 125px);
     background-color: rgb(255, 255, 255);
+    display: flex;
     overflow: hidden;
 }
-    
 p, label{
     padding: 3px 20px;
     font-weight: 600;
@@ -52,19 +51,106 @@ p, label{
     max-width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap ;
 }
 
 .categoria{
-    background-color: #343333bd ;
+    background-color:#343333bd;
     border-radius: 20px;
     color: #6fca8e;
+    font-weight: 400;
     margin-left: 15px;
-
 }
 
 .precio-sd{
     font-size: 12px;
     color: #a0a0a0;
     text-decoration: line-through;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#formulario-container {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px; /* Ancho del formulario */
+    max-width: 80%; /* Ancho máximo */
+    margin: auto; /* Centrar horizontalmente */
+    position: fixed; /* Fijar posición */
+    top: 50%; /* Posición desde la parte superior */
+    left: 50%; /* Posición desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Centrar verticalmente */
+}
+
+#formulario-container input {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espaciado interior */
+    margin-bottom: 12px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+#formulario-container button {
+    background-color: #4caf50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 12px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor al pasar */
+    border-radius: 4px; /* Borde redondeado */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+
+#formulario-container button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+#cerrar-formulario {
+    margin-top: 10px;
+}
+
+.btn-eliminar {
+    background-color: #f44336; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor al pasar */
+    border-radius: 4px; /* Borde redondeado */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+
+.btn-eliminar:hover {
+    background-color: #df3729; /* Cambio de color al pasar el mouse */
+}
+#mostrar-formulario {
+    position: fixed; /* Fijar posición */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    right: 20px; /* Espacio desde la parte derecha */
+    background-color: #4caf50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 16px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor al pasar */
+    border-radius: 50%; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+#mostrar-formulario:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
 }
