@@ -64,14 +64,14 @@ function mostrarProductos(productosArray) {
             </div>
             `;
         
-        // Agrega el bloque HTML generado al contenido de la tabla
+        
         tabla += bloqueHtml;
     }
     
-    // Cierra la etiqueta de div que envuelve todos los productos
+    
     tabla += "</div>";
     
-    // Inserta el HTML generado en el contenedor de productos en la página
+    
     productos.innerHTML = tabla;
   }
 
